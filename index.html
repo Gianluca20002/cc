@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Computación CC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1> <i class="fa-solid fa-computer fa-lg"></i> Computación CC</h1>
+    <nav>
+      
+      <ul>
+        <li><a href="#landing">  Inicio</a></li>
+        <li><a href="#Productos">Productos</a></li>
+        <li><a href="#carrito">Carrito</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="landing">
+      <h1>Bienvenido a Computación CC</h1>
+      
+      <div class="card">
+      <h4>Venta de artículos de computación</h4>
+  
+      <p>En Computación CC, contamos con una extensa trayectoria en el rubro, brindando a nuestros clientes un respaldo sólido al momento de adquirir un artículo tecnológico.</p>
+      
+      <p>Nuestro equipo altamente calificado realiza rigurosas revisiones en todos los productos, asegurando que se encuentren en óptimas condiciones.</p>
+      
+      <p>Disponemos de una amplia selección de artículos que abarcan prácticamente todas los rubros tecnlógicos actualizados.</p>
+      
+      <p>Le invitamos a disfrutar de nuestra galería de artículos y a ponerse en contacto con nosotros para obtener más información. ¡Estamos ansiosos por atenderle!</p>
+    
+      <p>Todos nuestro productos cuentan con garantía</p>
+    </div>
+    </section>
+
+    <section id="Productos">
+      <h2> <i class="fa-solid fa-store"></i>Listado de Productos</h2>
+      <ul id="articulos-lista">
+      </ul>
+    </section>
+
+    <section id="detalle-articulo">
+      <h2>Detalle del Artículo</h2>
+      <div class="card" id="articulo-detalle">
+      </div>
+    </section>
+
+    <div id="carritoContainer">
+      <h2><i class="fa-solid fa-cart-shopping"></i>Carrito de compras</h2>
+      <ul id="carritoItems"><li></li></ul>
+      <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+  </br>
+    <div id="topedeformulario">
+      <h2>Contacto</h2>
+    </div>
+    <section id="contacto">
+      
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+  
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <button id="btninstalar">Instalar</button>
+  </main>
+
+  
+
+
+   
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registrado con éxito:', registration);
+        })
+        .catch((error) => {
+          console.error('Error al registrar el Service Worker:', error);
+        });
+    }
+  </script>
+ 
+  <footer>
+    <p>@ComputaciónCC.com.ar  @davinci.edu.ar </p>
+    <p>Gianluca Miotto, Aplicaciones Web Progresivas, Turno Mañana, DWM3AP, 2023.</p>
+    <p>© 2023 Computación CC. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+

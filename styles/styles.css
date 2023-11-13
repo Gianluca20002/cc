@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #24c400;
+  color: #000000;
+  padding: 10px;
+  height: 15vh;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Estilos específicos */
+#articulos-lista li {
+  cursor: pointer;
+}
+
+#articulo-detalle {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+#carrito-lista {
+  border: 1px solid #055714;
+  padding: 10px;
+}
+
+#contacto {
+  
+  border: 2px solid rgb(143, 183, 0);
+  padding: 10px;
+  background-color: rgb(88, 196, 0);
+  box-sizing: border-box;
+  box-shadow: inset;
+  /*margin-left: 10%;
+  margin-right: 71%;*/
+}
+#topedeformulario {
+  background-color: #910000;
+  color: #ffffff;
+  padding: 1px;
+  text-align: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #006986;
+  color: #000000;
+  padding: 10px;
+}
+
+.card {
+  border-color: rgba(56, 56, 56, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px #4c4b4b8a;
+  width: 90%;
+  align-items: center;
+}
+
+button {
+  background-color: #232323;
+  padding: 2px;
+  color: aliceblue;
+  border-radius: 8px;
+  margin-left: 5px;
+  
+}
+
+button:hover {
+  background-color: #4c4b4b;
+}
+
+/* Otros estilos... */
+
+  
